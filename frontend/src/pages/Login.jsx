@@ -18,7 +18,7 @@ function Login() {
     setLoginInfo(copySignupInfo);
   };
 
-  const handleSignup = async (e) => {
+  const handleLogin = async (e) => {
     e.preventDefault();
     const { email, password } = loginInfo;
     if (!email || !password) {
@@ -57,7 +57,7 @@ function Login() {
   return (
     <div className="container">
       <h1>Login</h1>
-      <form onSubmit={handleSignup}>
+      <form onSubmit={handleLogin}>
         <div>
           <label htmlFor="email">Email: </label>
           <input
