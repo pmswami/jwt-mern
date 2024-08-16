@@ -23,7 +23,7 @@ function Home() {
 
   const fetchProducts = async () => {
     try {
-      const url = "http://localhost:8080/products";
+      const url = "https://jwt-mern-swamfires-projects.vercel.app/products";
       const response = await fetch(url, {
         headers: { Authorization: localStorage.getItem("token") },
       });

@@ -26,7 +26,7 @@ function Signup() {
       return handleError("Name or email or password is required");
     }
     try {
-      const url = "http://localhost:8080/auth/signup";
+      const url = "https://jwt-mern-swamfires-projects.vercel.app/auth/signup";
       const response = await fetch(url, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
